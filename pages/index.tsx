@@ -43,12 +43,17 @@ function About() {
               <a
                 href="https://www.instagram.com/matildajoprice"
                 target="_blank"
+                rel="noreferrer"
               >
                 <NextImage src="/logos/instagram.webp" width="40" height="40" />
               </a>
             </li>
             <li>
-              <a href="https://www.imdb.com/name/nm11361521" target="_blank">
+              <a
+                href="https://www.imdb.com/name/nm11361521"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <NextImage src="/logos/imdb.png" width="40" height="40" />
               </a>
             </li>
