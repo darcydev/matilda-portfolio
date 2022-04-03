@@ -1,5 +1,3 @@
-import styled from "styled-components"
-
 interface Props {
   images: Image[]
 }
@@ -12,14 +10,12 @@ interface Image {
 
 export default function Gallery({ images }: Props): JSX.Element {
   return (
-    <Styled>
+    <div>
       {images.map((image) => (
         <figure key={image.id} className="project-inner">
           <img src={image.src} alt={image.alt} />
         </figure>
       ))}
-    </Styled>
+    </div>
   )
 }
-
-const Styled = styled.div``
