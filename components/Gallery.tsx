@@ -1,3 +1,6 @@
+import styled from "styled-components"
+import Image from "./Image"
+
 interface Props {
   images: Image[]
 }
@@ -10,12 +13,15 @@ interface Image {
 
 export default function Gallery({ images }: Props): JSX.Element {
   return (
-    <div>
+    <StyledContainer>
       {images.map((image) => (
-        <figure key={image.id} className="project-inner">
-          <img src={image.src} alt={image.alt} />
-        </figure>
+        <Image key={image.id} src={image.src} alt={image.alt} />
       ))}
-    </div>
+    </StyledContainer>
   )
 }
+
+const StyledContainer = styled.section`
+  width: 70vw;
+  margin: 0 0 0 auto;
+`
